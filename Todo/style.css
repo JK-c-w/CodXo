@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(115, 115, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box{
+    width: 30%;
+    height: 80%;
+    background-color: rgba(255, 248, 220, 0.173);
+    border-radius: 15px;
+    /* display: none; */
+    position: absolute;
+    overflow: hidden;
+   
+}
+.box .cal{
+    width: 100%;
+    height:20%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(29, 29, 105);
+
+}
+.cal .DMY{
+    display: flex;
+    gap: 10px;
+}
+.DMY h1{
+    font-size: 50px;
+}
+.week-month-year p:first-child{
+    margin-top: 10px;
+}
+.Days {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-weight: 900;
+}
+.to-do{
+    display: flex;
+    align-items: center;}
+.Add-list{
+    transform: translate(150px,250px);
+ 
+}
+.add-icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(29, 29, 105);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+
+}
+.icon{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+form{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+   
+}
+.input-box{
+    width: 60%;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.input-task{
+    background-color: rgba(255, 248, 220, 0.173) ;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    transform: translateX(20px);
+}
+input:focus{
+    outline: none;
+}
+
+.add-btn{
+    width: 30px;
+    height:30px;
+}
+.add-btn button{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 29, 105);
+    border: none;
+    font-size: 30px;
+}
+.delete{
+    width: 30px;
+    height:30px;
+    background-color: rgb(29, 29, 105);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.task{
+    background-color: rgb(115, 115, 168);
+    margin: 5px 10px;
+    padding: 5px;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid  rgb(115, 115, 168);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.done{
+    width: 30px;
+    height:30px;
+    background-color: rgb(29, 29, 105);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.task.completed {
+    text-decoration: line-through;
+    color: #888;
+}
